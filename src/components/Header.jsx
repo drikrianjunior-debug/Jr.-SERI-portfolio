@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header style={{
       position: 'absolute',
-      top: '2.5rem', left: '2rem', right: '2rem',
+      top: '2.5rem', left: '1.2rem', right: '2rem',
       display: 'flex', justifyContent: 'space-between', alignItems: 'center',
       pointerEvents: 'auto'
     }}>
