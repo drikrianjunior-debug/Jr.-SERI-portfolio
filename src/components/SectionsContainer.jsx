@@ -273,7 +273,7 @@ const downloadPDF = () => {
           <u style={{color : '#c5a059'}}>[LICENCE PROFESSIONNELLE 1, 2 et 3]</u><br />
           Université Tertiaire et Technologique LOKO - Marcory : 2017 - 2020. <br />
           <u style={{color : '#c5a059'}}>[FORMATION WINDEV]</u><br />
-          Formation en programmation avec le logiciel WINDEV : 2020. 
+          Formation en programmation avec le logiciel WINDEV : 2020. <br />
           <u style={{color : '#c5a059'}}>[FORMATION LANGUE ALLEMANDE]</u><br />
           Formation en Allemand au German Center (Abidjan, Cocody Angré, les OSCARS) : 2025 - 2026. 
         </p>
