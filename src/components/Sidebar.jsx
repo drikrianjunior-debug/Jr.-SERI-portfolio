@@ -62,21 +62,29 @@ export default function Sidebar({ isOpen, setIsOpen }) {
             />
 
             <motion.div
-              initial={{ x: '-100%' }}
-              animate={{ x: 0 }}
-              exit={{ x: '-100%' }}
-              transition={{ type: 'spring', damping: 28, stiffness: 220 }}
-              style={{
-                position: 'fixed',
-                top: 0, left: 0, width: '400px', maxWidth: '85vw', height: '100vh',
-                backgroundColor: '#090810',
-                borderRight: '1px solid rgba(255, 255, 255, 0.03)',
-                padding: '9rem 3.5rem 3.5rem 3.5rem',
-                display: 'flex',
-                flexDirection: 'column',
-                zIndex: 450, pointerEvents: 'auto', boxSizing: 'border-box'
-              }}
-            >
+  initial={{ x: '-100%' }}
+  animate={{ x: 0 }}
+  exit={{ x: '-100%' }}
+  transition={{ type: 'spring', damping: 28, stiffness: 220 }}
+  style={{
+    position: 'fixed',
+    top: 0, 
+    left: 0, 
+    // Changement ici : on occupe 100% sur mobile, 400px sur desktop
+    width: '100%', 
+    maxWidth: '400px', 
+    height: '100vh',
+    backgroundColor: '#090810',
+    borderRight: '1px solid rgba(255, 255, 255, 0.03)',
+    // Ajustement dynamique du padding pour mobile
+    padding: '7rem 2rem 2rem 2rem', 
+    display: 'flex',
+    flexDirection: 'column',
+    zIndex: 450, 
+    pointerEvents: 'auto', 
+    boxSizing: 'border-box'
+  }}
+>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.8rem' }}>
                 <span style={{ fontFamily: 'monospace', fontSize: '0.65rem', opacity: 0.3, letterSpacing: '2px' }}>MENU</span>
                 
