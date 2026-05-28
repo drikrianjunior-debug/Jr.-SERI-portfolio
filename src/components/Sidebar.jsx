@@ -54,7 +54,7 @@ export default function Sidebar({ isOpen, setIsOpen }) {
               onClick={() => setIsOpen(false)}
               style={{
                 position: 'fixed',
-                top: 0, left: 0, width: '100vw', height: '100vh',
+                top: 0, left: 0, width: '105vw', height: '100vh',
                 backgroundColor: 'rgba(3, 2, 8, 0.6)',
                 backdropFilter: 'blur(15px)',
                 zIndex: 400, pointerEvents: 'auto'
