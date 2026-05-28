@@ -1,0 +1,168 @@
+:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: linear-gradient(180deg, #080a14 0%, #0E1428 100%);
+  --border: #e5e4e7;
+  --code-bg: #f4f3ec;
+  --accent: #aa3bff;
+  --accent-bg: rgba(170, 59, 255, 0.1);
+  --accent-border: rgba(170, 59, 255, 0.5);
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;
+    --text-h: #f3f4f6;
+    --bg: 
+    --border: #2e303a;
+    --code-bg: #1f2028;
+    --accent: #c5a059;
+    --accent-bg: rgba(192, 132, 252, 0.15);
+    --accent-border: rgba(192, 132, 252, 0.5);
+    --social-bg: rgba(47, 48, 58, 0.5);
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  }
+
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  }
+}
+
+body {
+  background: #080a14; /* Couleur de secours/fond pour le dégradé */
+  background-attachment: fixed;
+  margin: 0;
+}
+
+#root {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+p {
+  margin: 0;
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}
+
+
+/* --- ADAPTATION MOBILE (Écrans < 768px) --- */
+@media (max-width: 768px) {
+  /* 1. On autorise le conteneur principal à s'étendre totalement */
+  #root {
+    width: 100% !important;
+    padding: 0 1rem;
+  }
+
+  /* 2. On réduit la taille des grands titres */
+  h1, h2 {
+    font-size: 1.8rem !important; /* Réduction pour éviter le débordement */
+    line-height: 1.2 !important;
+  }
+
+  /* 3. On ajuste le HeroText pour qu'il soit plus compact */
+  .hero-container {
+    width: 95% !important;
+    padding-top: 2rem;
+  }
+
+  /* 4. On s'assure que les formulaires ne soient pas trop larges */
+  form, select, input, textarea {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  /* 5. Ajustement des marges internes des sections */
+  .section-style {
+    padding: 0 5% !important;
+  }
+}
+
+/* --- ADAPTATION TABLETTE (Écrans entre 769px et 1024px) --- */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #root {
+    width: 90% !important; /* On réduit la largeur totale pour laisser un peu d'air */
+    padding: 0 2rem;
+  }
+
+  /* Réduction légère des titres pour éviter les retours à la ligne indésirables */
+  h1 {
+    font-size: 2.2rem !important;
+  }
+  
+  h2 {
+    font-size: 2rem !important;
+  }
+
+  /* Ajustement des sections pour qu'elles restent lisibles */
+  .section-style {
+    padding: 0 5% !important;
+  }
+}
