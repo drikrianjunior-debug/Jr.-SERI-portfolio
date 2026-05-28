@@ -97,12 +97,14 @@ export default function Sidebar({ isOpen, setIsOpen }) {
                       border: 'none',
                       // Le lien "Contact • Devis" utilise maintenant la couleur d'accent
                       color: item.id === 'contact-devis' ? '#c5a059' : '#ffffff',
-                      fontSize: '1.3rem',
+                      fontSize: 'clamp(0.9rem, 4vw, 1.3rem)',
                       fontFamily: '"Syne", sans-serif',
                       textAlign: 'left',
                       cursor: 'pointer',
                       opacity: 0.8,
-                      fontWeight: '400'
+                      fontWeight: '400',
+                      wordBreak: 'break-word', // Force le retour à la ligne si nécessaire
+                      lineHeight: '1.2'       // Réduit l'espace entre les lignes pour que ça reste compact
                     }}
                   >
                     <motion.div whileHover={{ x: 10, opacity: 1 }}>{item.label}</motion.div>
