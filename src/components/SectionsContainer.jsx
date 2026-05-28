@@ -291,9 +291,9 @@ const downloadPDF = () => {
       <h2 style={{ fontFamily: '"Syne", sans-serif', fontSize: '3rem', fontWeight: '500', marginBottom: '2rem' }}>Expériences •</h2>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
         {[
-          { title: "DÉVELOPPEUR WEB", company: "BIN LENOIR", desc: "Développeur du site de BIN LENOIR. (2022- 2023)" },
-          { title: "DÉVELOPPEUR WEB STAGIAIRE", company: "Société Nouvelle d'exploitation de Marques", desc: "Réalisation d'un site web vitrine pour la SNEM. (2021 - 2022)" },
-          { title: "DÉVELOPPEUR WEB", company: "H&Dev", desc: "Co-fondateur, gestion de projets, développeur web, app et mobile. (2019 - Aujourd'hui)" }
+          { title: "DÉVELOPPEUR WEB", company: "BIN LENOIR", desc: "Développeur du site de BIN LENOIR - ABIDJAN, COCODY ANGRE 7E TRANCHE (2022- 2023)" },
+          { title: "DÉVELOPPEUR WEB STAGIAIRE", company: "Société Nouvelle d'exploitation de Marques", desc: "Réalisation d'un site web vitrine pour la SNEM - KOUMASSI RUE DES SCIENCES, ZONE INDUSTRIELLE (2021 - 2022)" },
+          { title: "DÉVELOPPEUR WEB", company: "H&Dev", desc: "Co-fondateur, gestion de projets, développeur web, app et mobile - ABIDJAN, COCODY (2019 - Aujourd'hui)" }
         ].map((exp, i) => (
           <div key={i} style={{ borderLeft: '1px solid #c5a059', paddingLeft: '1rem' }}>
             <h4 style={{ margin: 0, color: '#c5a059' }}>{exp.title}</h4>
