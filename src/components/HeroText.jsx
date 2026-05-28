@@ -39,7 +39,7 @@ return (
         letterSpacing: '1px', 
         lineHeight: '1.6'
       }}>
-        DEVELOPPEUR <br />
+        DEVELOPPEUR FULLSTACK<br />
         SITES WEB, APPLICATIONS WEB, APPLICATION MOBILE...
       </p>
     </div>
