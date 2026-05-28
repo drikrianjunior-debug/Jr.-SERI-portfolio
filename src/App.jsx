@@ -148,8 +148,8 @@ const iconVariants = {
         <FaInstagram />
       </a>
       <a href="https://wa.me/2250759128035" target="_blank" rel="noreferrer" style={{ color: '#c5a059', fontSize: '1.4rem' }}>
-        <FaWhatsapp />
-      </a>
+  <FaWhatsapp />
+</a>
     </motion.div>
   )}
 </AnimatePresence>
