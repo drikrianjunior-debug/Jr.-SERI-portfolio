@@ -8,7 +8,7 @@ export default function Loader() {
       justifyContent: 'center',
       alignItems: 'center',
       height: '100vh',
-      backgroundColor: '#0a0a0a', // Noir profond
+      backgroundColor: ' linear-gradient(180deg, #080a14 0%, #0E1428 100%)', // Noir profond
       color: '#c5a059' // Or
     }}>
       {/* Vous pouvez ajouter votre logo ici si vous le souhaitez */}
@@ -20,7 +20,7 @@ export default function Loader() {
         borderRadius: '50%',
         animation: 'spin 1s linear infinite'
       }}></div>
-      <p style={{ marginTop: '1rem', fontFamily: 'sans-serif' }}>Chargement...</p>
+      <p style={{ marginTop: '1rem', fontFamily: 'sans-serif' }}>Jr. SERI by H&Dev...</p>
 
       <style>{`
         @keyframes spin {
