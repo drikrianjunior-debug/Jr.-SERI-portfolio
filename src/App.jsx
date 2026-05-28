@@ -141,13 +141,13 @@ const iconVariants = {
         zIndex: 300
       }}
     >
-      <a href="https://facebook.com/VOTRE_PAGE" target="_blank" rel="noreferrer" style={{ color: '#c5a059', fontSize: '1.4rem' }}>
+      <a href="https://www.facebook.com/profile.php?id=100006488679303" target="_blank" rel="noreferrer" style={{ color: '#c5a059', fontSize: '1.4rem' }}>
         <FaFacebook />
       </a>
-      <a href="https://instagram.com/VOTRE_PAGE" target="_blank" rel="noreferrer" style={{ color: '#c5a059', fontSize: '1.4rem' }}>
+      <a href="https://www.instagram.com/josephseri/" target="_blank" rel="noreferrer" style={{ color: '#c5a059', fontSize: '1.4rem' }}>
         <FaInstagram />
       </a>
-      <a href="https://wa.me/VOTRE_NUMERO" target="_blank" rel="noreferrer" style={{ color: '#c5a059', fontSize: '1.4rem' }}>
+      <a href="https://wa.me/2250759128035" target="_blank" rel="noreferrer" style={{ color: '#c5a059', fontSize: '1.4rem' }}>
         <FaWhatsapp />
       </a>
     </motion.div>
