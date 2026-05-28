@@ -68,7 +68,7 @@ export default function Sidebar({ isOpen, setIsOpen }) {
               transition={{ type: 'spring', damping: 28, stiffness: 220 }}
               style={{
                 position: 'fixed',
-                top: 0, left: 0, width: '430px', maxWidth: '85vw', height: '100vh',
+                top: 0, left: 0, width: '450px', maxWidth: '85vw', height: '100vh',
                 backgroundColor: '#090810',
                 borderRight: '1px solid rgba(255, 255, 255, 0.03)',
                 padding: '9rem 3.5rem 3.5rem 3.5rem',
