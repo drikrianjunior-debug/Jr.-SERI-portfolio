@@ -71,7 +71,7 @@ export default function Sidebar({ isOpen, setIsOpen }) {
     top: 0, 
     left: 0, 
     // Changement ici : on occupe 100% sur mobile, 400px sur desktop
-    width: '80%', 
+    width: '70%', 
     maxWidth: '400px', 
     height: '100vh',
     backgroundColor: '#090810',
