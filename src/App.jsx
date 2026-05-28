@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { AnimatePresence, motion } from 'framer-motion';
+import Loader from './components/Loader';
 
 import Rain from './components/Canvas3D/Rain';           
 import Header from './components/Header';
@@ -85,6 +86,16 @@ const iconVariants = {
   hidden: { x: 50, opacity: 0 },
   visible: { x: 0, opacity: 1 }
 };
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simule un temps de chargement
+    const timer = setTimeout(() => setLoading(false), 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) return <Loader />;
 
   return (
     <div 
