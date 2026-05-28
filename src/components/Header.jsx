@@ -8,7 +8,7 @@ export default function Header() {
       display: 'flex', justifyContent: 'space-between', alignItems: 'center',
       pointerEvents: 'auto'
     }}>
-      <div  className="cinzel-title" style={{ fontSize: '1.6rem', color : 'white', fontWeight: '540', letterSpacing: '-0.5px' }}>
+      <div  className="cinzel-title" style={{ fontSize: '1.4rem', color : 'white', fontWeight: '540', letterSpacing: '-0.5px' }}>
         JR. SERI
       </div>
 
